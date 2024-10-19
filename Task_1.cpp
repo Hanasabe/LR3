@@ -8,7 +8,9 @@ void ignoreLine()
   std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
 int main() {
-    printf("\033[32m                    Выполнила Щербицкая Ника, 453501\n          Суть задания: Используя цикл while вычислить N = ∑ (ai - bi)^2\033[0m\n");
+    printf("\x1b[1;35m");
+    std::cout << "                         Выполнила Щербицкая Ника, 453501\n          Суть задания: Используя цикл while вычислить N = ∑ (ai - bi)^2" << '\n';
+    printf("\x1b[0m");
     summ:
     int i = 1;
     int sum = 0;
